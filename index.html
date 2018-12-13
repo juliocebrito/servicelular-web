@@ -9,202 +9,273 @@
     <title>Servicelular</title>
     <link rel="icon" href="assets/img/favicon.ico" type="favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66660062-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-66660062-4');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 957574182 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-957574182"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-957574182');
+    </script>
+    <!-- Event snippet for call conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function call_gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-957574182/AvVeCK7Nj5EBEKbYzcgD',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+    <!-- Event snippet for chat conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function chat_gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-957574182/C54CCMDYopEBEKbYzcgD',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+    <!-- Event snippet for chat_float conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function chat_float_gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-957574182/RVsoCOzwrpEBEKbYzcgD',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </head>
 <body>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#inicio">
-            <img src="assets/img/logo-servicelular.svg" width="30" height="30" class="d-inline-block align-top"
-                alt="">
-            servicelular.com
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-       
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#inicio">
+                <img src="assets/img/logo-servicelular.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                servicelular.com
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://api.whatsapp.com/send?phone=573016739914"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a name="inicio"></a>
+        <div class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Servicio Tecnico Celular</h1>
+                            <h3>Iphone, Samsung, Huawei, Motorola, Xperia, Xiaomi, LG</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li class="list-inline-item">
+                                    <a target="_blank" class="btn btn-primary btn-lg" href="https://api.whatsapp.com/send?phone=573016739914"
+                                        role="button" onclick="chat_gtag_report_conversion();"><i class="fab fa-whatsapp"></i> 301 673 9914</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a target="_blank" class="btn btn-primary btn-lg" href="tel:3016739914" role="button" onclick="call_gtag_report_conversion();"><i
+                                            class="fas fa-mobile-alt"></i> 301 673 9914</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-sm-2">
+                    <img class="img-fluid" src="assets/img/samsung.png" alt="celulares samsung">
+                </div>
+                <div class="col-lg-2  col-sm-2">
+                    <img class="img-fluid" src="assets/img/apple.png" alt="celulares apple">
+                </div>
+                <div class="col-lg-2  col-sm-2">
+                    <img class="img-fluid" src="assets/img/huawei.png" alt="celulares huawei">
+                </div>
+                <div class="col-lg-2  col-sm-2">
+                    <img class="img-fluid" src="assets/img/motorola.png" alt="celulares motorola">
+                </div>
+                <div class="col-lg-2  col-sm-2">
+                    <img class="img-fluid" src="assets/img/lg.png" alt="celulares lg">
+                </div>
+                <div class="col-lg-2  col-sm-2">
+                    <img class="img-fluid" src="assets/img/mi.png" alt="celulares xiaomi">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <a name="nosotros"></a>
+        <div class="content-section"></div>
+        <div class="container">
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card border-0">
+                        <img class="img-thumbnail border-0" src="assets/img/reparacion de pantallas.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Reparación de Pantallas</h4>
+                            <p class="lead text-center">Utilizamos la más avanzada tecnología y la mejor técnica de
+                                refacción y reparación de visores o cristales de pantallas lcd display para celulares de
+                                las marcas: Iphone, Samsung, Huawei, Motorola, LG, Xiaomi, Asus, Zte.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img class="img-thumbnail border-0" src="assets/img/repuestos y accesorios.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Repuestos y Accesorios</h4>
+                            <p class="lead text-center">Trabajamos de la mano con nuestros proveedores para tener la mejor
+                                calidad en Repuestos y Accesorios, de esta manera cumplir con las expectativas de nuestros
+                                clientes de mantener sus dispositivos, funcionales y protegidos.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img class="img-thumbnail border-0" src="assets/img/soporte tecnico y software.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Soporte Técnico y Software</h4>
+                            <p class="lead text-center">Los Dispositivos han evolucionado hasta funcionar con sistema
+                                operativo, por lo que se encuentran vulnerables a los ataques por virus, robo de
+                                información y descargas secretas, por lo que hay que tomar medidas de precaución como:
+                                hacer backup, actualizar y optimizar la memoria.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="servicios"></a>
+        <div class="content-section"></div>
+        <div class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Servicio Tecnico<br>Pantalla</h2>
+                        <p class="lead">Nuestro proceso cambio o reparación de pantallas es realizado con maquinas
+                            importadas las cuales aseguran la reparacion de su equipo. Para el proceso de cambio contamos
+                            con proveedores de todas las marcas y con la mejor calidad.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <img class="img-fluid" src="assets/img/pantalla.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Servicio Tecnico<br>Humedad</h2>
+                        <p class="lead">Nuestro proceso de limpieza y mantenimiento por humedad va desde desarmar cada
+                            componente, someterlos a procesos de ultrasonido con sustancias para la remoción de óxidos
+                            sulfatos que se hayan generado.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <img class="img-fluid" src="assets/img/humedad.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Servicio Tecnico<br>Bateria</h2>
+                        <p class="lead">La Batería, componente fundamental de Dispositivos Móviles tiene un tiempo de
+                            funcionamiento, por lo tanto, cuando empieza a bajar su rendimiento, lo más recomendable es
+                            cambiarla, ofrecemos la mejor calidad en Baterías para todos los fabricantes.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <img class="img-fluid" src="assets/img/bateria.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="contacto"></a>
+        <div class="content-section"></div>
+        <div class="contacto">
+            <h2>Carrera 15 # 78-80 local 101 barrio Lago Gaitan</h2>
+            <ul class="list-inline contacto-social-buttons">
+                <li class="list-inline-item">
+                    <a target="_blank" class="btn btn-primary" href="https://api.whatsapp.com/send?phone=573016739914" role="button" onclick="chat_gtag_report_conversion();"><i
+                            class="fab fa-whatsapp"></i> 301 673 9914</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#nosotros">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a target="_blank" class="nav-link" href="https://api.whatsapp.com/send?phone=573016739914"><i class="fab fa-whatsapp"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                <li class="list-inline-item">
+                    <a target="_blank" class="btn btn-primary" href="tel:3016739914" role="button" onclick="call_gtag_report_conversion();"><i class="fas fa-mobile-alt"></i>
+                        301 673 9914</a>
                 </li>
             </ul>
         </div>
-        
-    </nav>
-
-    <a name="inicio"></a>
-    <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Servicio Tecnico Celular</h1>
-                        <h3>iphone, samsung, huawei, motorola, xperia, xiaomi, lg</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li class="list-inline-item">
-                                <a target="_blank" class="btn btn-primary btn-lg" href="https://api.whatsapp.com/send?phone=573016739914" role="button"><i class="fab fa-whatsapp"></i> 301 673 9914</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" class="btn btn-primary btn-lg" href="tel:3016739914" role="button"><i class="fas fa-mobile-alt"></i> 301 673 9914</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2  col-sm-2">
-                <img class="img-fluid" src="assets/img/samsung.png" alt="">
-            </div>
-            <div class="col-lg-2  col-sm-2">
-                <img class="img-fluid" src="assets/img/apple.png" alt="">
-            </div>
-            <div class="col-lg-2  col-sm-2">
-                <img class="img-fluid" src="assets/img/huawei.png" alt="">
-            </div>
-            <div class="col-lg-2  col-sm-2">
-                <img class="img-fluid" src="assets/img/motorola.png" alt="">
-            </div>
-            <div class="col-lg-2  col-sm-2">
-                <img class="img-fluid" src="assets/img/lg.png" alt="">
-            </div>
-            <div class="col-lg-2  col-sm-2">
-                <img class="img-fluid" src="assets/img/mi.png" alt="">
-            </div>
-        </div>
-    </div>
-    <br>
-
-    <a name="nosotros"></a>
-    <div class="content-section"></div>
-    <div class="container">
-        <div class="row">
-            <div class="card-deck">
-                <div class="card border-0">
-                    <img class="img-thumbnail border-0" src="assets/img/reparacion de pantallas.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Reparación de Pantallas</h5>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo beatae
-                            earum consequatur fuga hic animi quasi qui omnis. Enim beatae unde facere voluptatem culpa at
-                            veritatis tenetur distinctio? Rerum, sed.</p>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <img class="img-thumbnail border-0" src="assets/img/repuestos y accesorios.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Repuestos y Accesorios</h5>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius, error,
-                            iusto amet consectetur tempora quaerat deserunt nostrum atque ab corrupti molestias
-                            voluptatibus sapiente in nisi, tempore iure nam praesentium!</p>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <img class="img-thumbnail border-0" src="assets/img/soporte tecnico y software.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Soporte Técnico y Software</h5>
-                        <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nobis
-                            recusandae possimus expedita cumque, minus doloremque eligendi nemo incidunt aut atque
-                            reprehenderit laudantium obcaecati odio delectus voluptatem esse perspiciatis autem!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <a  name="servicios"></a>
-    <div class="content-section"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Servicio Tecnico<br>Pantalla</h2>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt at adipisci tempore accusamus tenetur maxime vel atque consectetur accusantium? Quo assumenda architecto vel nemo eaque magnam cum, quisquam dolore distinctio.</p>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <img class="img-fluid" src="assets/img/pantalla.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="content-section">
-        <div class="container">
-            <div class="row">
-                    <div class="col-lg-6 col-sm-6">
-                            <img class="img-fluid" src="assets/img/humedad.jpg" alt="">
-                        </div>
-                <div class="col-lg-6 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Servicio Tecnico<br>Humedad</h2>
-                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, soluta aspernatur! Ut, aut? Nesciunt incidunt culpa ipsa deserunt ea omnis impedit? Dicta repellat distinctio doloremque quae expedita ipsum voluptate magni?</p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <div class="content-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Servicio Tecnico<br>Bateria</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolores magnam doloribus aut voluptatum quia illum tenetur itaque vero, molestiae, exercitationem labore a nihil earum, provident quod sequi sapiente explicabo!</p>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <img class="img-fluid" src="assets/img/bateria.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <a name="contacto"></a>
-    <div class="content-section"></div>
-    <div class="contacto">
-        <h2>Carrera 15 # 78-80 local 101 barrio Lago Gaitan</h2>
-        <ul class="list-inline contacto-social-buttons">
-            <li class="list-inline-item">
-                <a target="_blank" class="btn btn-primary" href="https://api.whatsapp.com/send?phone=573016739914" role="button"><i
-                        class="fab fa-whatsapp"></i> 301 673 9914</a>
-            </li>
-            <li class="list-inline-item">
-                <a target="_blank" class="btn btn-primary" href="tel:3016739914" role="button"><i class="fas fa-mobile-alt"></i> 301 673 9914</a>
-            </li>
-        </ul>
-    </div>
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6007132809!2d-74.05989708523788!3d4.665062396611359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9dc18bce0fff95f7!2sServicelular!5e0!3m2!1ses-419!2sco!4v1543973958204" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+    </main>
+    <aside>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6007132809!2d-74.05989708523788!3d4.665062396611359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9dc18bce0fff95f7!2sServicelular!5e0!3m2!1ses-419!2sco!4v1543973958204" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </aside>
     <footer>
         <div class="container">
             <div class="row">
@@ -234,11 +305,9 @@
             </div>
         </div>
     </footer>
-
-    <a href="https://api.whatsapp.com/send?phone=573016739914" class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=573016739914" class="float" target="_blank" onclick="chat_float_gtag_report_conversion();">
     <i class="fab fa-whatsapp my-float"></i>
     </a>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
